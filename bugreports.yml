@@ -2,7 +2,7 @@
 - summary: |
     Сайт не переключается на русский язык полностью: описание, название, категория товара остаются на английском
   environment: |
-    Версия: Hexlet Store v1.2.1
+    Версия: Hexlet Store v1
     ОС: Windows 11 / macOS Sonoma
     Браузеры: Chrome 121, Firefox 120
   steps-to-reproduce: |
@@ -20,13 +20,13 @@
     - Названия категорий в хлебных крошках на английском
   severity: "high"
   attachments:
-    - "docs/2025-05-25_23-03-57.png"
+    - "docs/bug-card-not-clickable.png"
     - accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
 
 - summary: |
     Фильтр по цене не учитывает цену со скидкой при фильтрации
   environment: |
-    Версия: Hexlet Store v1.2.1 (коммит x3y4z5a)
+    Версия: Hexlet Store v1
     Тестовые данные: Товар "Зимняя куртка" (цена 10000 руб., скидка 50%)
   steps-to-reproduce: |
     1. Установить фильтр "Максимальная цена: 5000 руб."
