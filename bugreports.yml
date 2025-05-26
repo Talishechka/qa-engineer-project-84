@@ -62,8 +62,7 @@
   severity: "medium"
   attachments:
     - "screenshots/brand_filter_ui_issue.png"
-  additional-info: |
-    Пользователи сообщают о трудностях поиска нужного бренда среди 50+ вариантов
+
 
 - summary: |
     Некликабельный логотип Hexlet Store в хедере
@@ -99,3 +98,30 @@
   regression: "Да"
   attachments:
     - "screenshots/modal_close_button_bug.png"
+
+- summary: "Ошибка 500 при попытке отправить заказ (Internal Server Error)"
+    environment: |
+      Браузер: Chrome 119.0.6045.123 (Официальная сборка) (64-битный)
+      ОС: Windows 11 Pro 22H2
+      Версия API: v2.3.1
+    preconditions: |
+      В корзине добавлен минимум 1 товар
+    steps-to-reproduce: |
+      1. Перейти в раздел "Cart"
+      2. Нажать кнопку "Chekout"
+    expected-result: |
+      1. Заказ успешно создается в системе
+      2. Пользователь видит сообщение об успешном оформлении
+      3. В devtools статус должен быть 200 ОК
+    actual-result: |
+      1. Появляется сообщение "500 Internal Server Error"
+      2. Заказ не создается в системе
+    severity: critical
+    priority: highest
+    additional-info: |
+      - Ошибка воспроизводится в 100% случаев
+      - Проблема наблюдается только для всех пользователей
+    attachments:
+      - console-log: "logs/order_error_console.log"
+      - screenshot: "screenshots/500_error.png"
+      - network-log: "logs/network_trace.har"
