@@ -20,8 +20,8 @@
     - Названия категорий в хлебных крошках на английском
   severity: "high"
   attachments:
-    - "screenshots/ru_lang_partial_20240215.png"
-    - "network_logs/lang_api_response.json"
+    - ![Image](https://github.com/user-attachments/assets/e6bfd9c0-6d73-4296-9cc1-25c0419acf32)
+    - accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
 
 - summary: |
     Фильтр по цене не учитывает цену со скидкой при фильтрации
