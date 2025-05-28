@@ -21,7 +21,6 @@ test-cases:
 - summary: Некликабельный логотип Hexlet Store в хедере
   status: fail
   
-
 bugreports:
 - summary: Карточка товара "Chicken Meat" не реагирует на клики
   environment: |
