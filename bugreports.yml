@@ -41,7 +41,6 @@
   severity: "high"
   attachments:
     - "screenshots/discount_price_filter_issue.jpg"
-    - "database/queries/price_calculation.log"
 
 - summary: |
     Неудобная навигация в фильтре по брендам: не все бренды отображаются, управление только кнопками "Предыдущая"/"Следующая"
@@ -122,6 +121,4 @@
       - Ошибка воспроизводится в 100% случаев
       - Проблема наблюдается только для всех пользователей
     attachments:
-      - console-log: "logs/order_error_console.log"
       - screenshot: "screenshots/500_error.png"
-      - network-log: "logs/network_trace.har"
