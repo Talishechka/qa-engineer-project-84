@@ -50,9 +50,6 @@ bugreports:
     additional-info: |
       Проблема наблюдается для всех товаров в категории "Meat"
       В консоли разработчика ошибок не обнаружено
-    attachments:
-      - screenshot: "screenshots/non-clickable-card.png"
-      - console-log: "logs/click-event-log.json"
 
   - summary: |
       Неполный перевод интерфейса на русский язык
@@ -123,4 +120,4 @@ bugreports:
   severity: "medium"
   regression: "Да"
   attachments:
-    - "screenshots/modal_close_button_bug.png"
+    - "docs/modal_close_button_bug.png"
