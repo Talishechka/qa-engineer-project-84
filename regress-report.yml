@@ -1,123 +1,91 @@
 ---
 test-cases:
-  - summary: |
-      Проверка поиска товаров по ключевому слову "Cooking Oil"
-    status: pass
-
-  - summary: |
-      Проверка добавления товара "Cooking Oil" в корзину
-    status: pass
-
-  - summary: |
-      Проверка переключения языка интерфейса с английского на русский
-    status: pass
-
-  - summary: |
-      Проверка отображения детальной информации о товаре "Chicken Meat"
-    status: fail
-
-  - summary: |
-      Проверка работы фильтров по цене (диапазон 5000-15000 руб.)
-    status: fail
-
-  - summary: |
-      Проверка отправки заказа с товаром "Eyeshadow Palette with Mirror"
-    status: fail
-
-  - summary: |
-      Некликабельный логотип Hexlet Store в хедере
-    status: fail
-
+- summary: Проверка поиска товаров по ключевому слову "Cooking Oil"
+  status: pass
+  
+- summary: Проверка добавления товара "Cooking Oil" в корзину
+  status: pass
+  
+- summary: Проверка переключения языка интерфейса с английского на русский
+  status: pass
+  
+- summary: Проверка отображения детальной информации о товаре "Chicken Meat"
+  status: fail
+  
+- summary: Проверка работы фильтров по цене (диапазон 5000-15000 руб.)
+  status: fail
+  
+- summary: Проверка отправки заказа с товаром "Eyeshadow Palette with Mirror"
+  status: fail
+  
+- summary: Некликабельный логотип Hexlet Store в хедере
+  status: fail
+  
 
 bugreports:
-   - summary: |
-      Карточка товара "Chicken Meat" не реагирует на клики
-    environment: |
-      Версия приложения: Hexlet Store v2
-      Браузер: Chrome 121.0.6167.160 (Официальная сборка) (64-бит)
-      ОС: Windows 11 Pro 22H2
-    steps-to-reproduce: |
-      1. Открыть главную страницу магазина
-      2. Найти товар "Chicken Meat"
-      3. Попытаться кликнуть по карточке товара
-    expected-result: |
-      Должна открываться страница с детальной информацией о товаре
-    actual-result: |
-      Карточка товара не реагирует на клики
-      Курсор не меняется на pointer при наведении
-    severity: high
-    priority: medium
-    additional-info: |
-      Проблема наблюдается для всех товаров в категории "Meat"
-      В консоли разработчика ошибок не обнаружено
-
-  - summary: |
-      Неполный перевод интерфейса на русский язык
-    environment: |
-      Hexlet Store v2, Chrome 121, Windows 11
-    steps-to-reproduce: |
-      1. Переключить язык на русский
-      2. Открыть любую категорию товаров
-    expected-result: |
-      Полный перевод всех элементов интерфейса
-    actual-result: |
-      Названия товаров и описания остались на английском
-
-  - summary: |
-      Фильтр по цене не учитывает скидки
-    environment: |
-      Hexlet Store v2, Firefox 120, macOS
-    steps-to-reproduce: |
-      1. Установить фильтр "до 5000 руб."
-      2. Искать товар со скидкой 50% (ориг. цена 10000 руб.)
-    expected-result: |
-      Товар должен отображаться в результатах
-    actual-result: |
-      Товар не отображается, фильтр учитывает только оригинальную цену
-
-  - summary: |
-      Ошибка 500 при оформлении заказа
-    environment: |
-      Hexlet Store v2, API v2.3.1, Windows 11
-    steps-to-reproduce: |
-      1. Добавить товар в корзину
-      2. Нажать "Checkout"
-    expected-result: |
-      Успешное создание заказа
-    actual-result: |
-      Получена ошибка 500 Internal Server Error
-
-  - summary: |
-    Некликабельный логотип Hexlet Store в хедере
+- summary: Карточка товара "Chicken Meat" не реагирует на клики
   environment: |
-    Версия: Hexlet Store 2
-    Все основные браузеры
+    Версия приложения: Hexlet Store v2
+    Браузер: Chrome 121.0.6167.160 (Официальная сборка) (64-бит)
+    ОС: Windows 11 Pro 22H2
   steps-to-reproduce: |
-    1. Открыть любую страницу магазина
-    2. Навести курсор на логотип в верхнем левом углу
-    3. Попытаться кликнуть для возврата на главную
-  expected-result: |
-    Логотип кликабелен и ведет на главную страницу
+    - Открыть главную страницу магазина
+    - Найти товар "Chicken Meat"
+    - Попытаться кликнуть по карточке товара
+  expected-result: Должна открываться страница с детальной информацией о товаре
   actual-result: |
-    Логотип не реагирует на клики, курсор не меняется на pointer
-  severity: "low"
-  workaround: |
-    Использовать ссылку "Главная" в меню
-
-- summary: |
-    Некликабельный крестик в модальном окне успешного оформления заказа
-  environment: |
-    Версия: Hexlet Store v2
-    Устройства: Все платформы
+    Карточка товара не реагирует на клики
+    Курсор не меняется на pointer при наведении
+  severity: high
+  priority: medium
+  additional-info: |
+    Проблема наблюдается для всех товаров в категории "Meat"
+    В консоли разработчика ошибок не обнаружено
+    
+- summary: Неполный перевод интерфейса на русский язык
+  environment: Hexlet Store v2, Chrome 121, Windows 11
   steps-to-reproduce: |
-    1. Оформить тестовый заказ
-    2. В модальном окне подтверждения попытаться закрыть его через крестик в углу
-  expected-result: |
-    Окно закрывается при клике на крестик
+    - Переключить язык на русский
+    - Открыть любую категорию товаров
+  expected-result: Полный перевод всех элементов интерфейса
+  actual-result: Названия товаров и описания остались на английском
+- summary: Фильтр по цене не учитывает скидки
+  environment: Hexlet Store v2, Firefox 120, macOS
+  steps-to-reproduce: |
+    - Установить фильтр "до 5000 руб."
+    - Искать товар со скидкой 50% (ориг. цена 10000 руб.)
+  expected-result: Товар должен отображаться в результатах
+  actual-result: Товар не отображается, фильтр учитывает только оригинальную цену
+  
+- summary: Ошибка 500 при оформлении заказа
+  environment: Hexlet Store v2, API v2.3.1, Windows 11
+  steps-to-reproduce: |
+    - Добавить товар в корзину
+    - Нажать "Checkout"
+  expected-result: Успешное создание заказа
+  actual-result: Получена ошибка 500 Internal Server Error
+
+- summary: Некликабельный логотип Hexlet Store в хедере
+  environment: Версия: Hexlet Store 2, Все основные браузеры
+  steps-to-reproduce: |
+    - Открыть любую страницу магазина
+    - Навести курсор на логотип в верхнем левом углу
+    - Попытаться кликнуть для возврата на главную
+  expected-result: Логотип кликабелен и ведет на главную страницу
+  actual-result: Логотип не реагирует на клики, курсор не меняется на pointer
+  severity: low
+  workaround: Использовать ссылку "Главная" в меню
+  
+- summary: Некликабельный крестик в модальном окне успешного оформления заказа
+  environment: Версия: Hexlet Store v2, Устройства: Все платформы
+  steps-to-reproduce: |
+    - Оформить тестовый заказ
+    - В модальном окне подтверждения попытаться закрыть его через крестик в углу
+  expected-result: Окно закрывается при клике на крестик
   actual-result: |
     Крестик виден, но не реагирует на клики
     Окно можно закрыть только кнопкой "Close"
-  severity: "medium"
-  regression: "Да"
+  severity: medium
+  regression: Да
   attachments:
-    - "docs/modal_close_button_bug.png"
+    - docs/modal_close_button_bug.png
