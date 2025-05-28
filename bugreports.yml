@@ -45,7 +45,7 @@
 - summary: |
     Неудобная навигация в фильтре по брендам: не все бренды отображаются, управление только кнопками "Предыдущая"/"Следующая"
   environment: |
-    Версия: Hexlet Store v1.2.1 (коммит x3y4z5a)
+    Версия: Hexlet Store v1
     Устройства: Desktop (Chrome 121), iPad (Safari 16)
   steps-to-reproduce: |
     1. Открыть категорию "Электроника"
@@ -63,7 +63,7 @@
 - summary: |
     Некликабельный логотип Hexlet Store в хедере
   environment: |
-    Версия: Hexlet Store v1.2.1
+    Версия: Hexlet Store v1
     Все основные браузеры
   steps-to-reproduce: |
     1. Открыть любую страницу магазина
@@ -80,7 +80,7 @@
 - summary: |
     Некликабельный крестик в модальном окне успешного оформления заказа
   environment: |
-    Версия: Hexlet Store v1.2.1
+    Версия: Hexlet Store v1
     Устройства: Все платформы
   steps-to-reproduce: |
     1. Оформить тестовый заказ
@@ -99,7 +99,7 @@
     environment: |
       Браузер: Chrome 119.0.6045.123 (Официальная сборка) (64-битный)
       ОС: Windows 11 Pro 22H2
-      Версия API: v2.3.1
+      Версия: Hexlet Store v1
     preconditions: |
       В корзине добавлен минимум 1 товар
     steps-to-reproduce: |
