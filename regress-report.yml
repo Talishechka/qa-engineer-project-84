@@ -42,14 +42,14 @@ bugreports:
     actual-result: Названия товаров и описания остались на английском
   - summary: Фильтр по цене не учитывает скидки
     environment: Hexlet Store v2, Firefox 120, macOS
-    steps-to-reproduce:
+    steps-to-reproduce: |
       - Установить фильтр "до 5000 руб."
       - Искать товар со скидкой 50% (ориг. цена 10000 руб.)
     expected-result: Товар должен отображаться в результатах
     actual-result: Товар не отображается, фильтр учитывает только оригинальную цену
   - summary: Ошибка 500 при оформлении заказа
     environment: Hexlet Store v2, Windows 11
-    steps-to-reproduce:
+    steps-to-reproduce: |
       - Добавить товар в корзину
       - Нажать "Checkout"
     expected-result: Успешное создание заказа
@@ -58,7 +58,7 @@ bugreports:
     environment: |
       Версия: Hexlet Store 2
       Браузеры: Все основные
-    steps-to-reproduce:
+    steps-to-reproduce: |
       - Открыть любую страницу магазина
       - Навести курсор на логотип в верхнем левом углу
       - Попытаться кликнуть для возврата на главную
@@ -70,7 +70,7 @@ bugreports:
     environment: |
       Версия: Hexlet Store 2
       Все основные браузеры
-    steps-to-reproduce:
+    steps-to-reproduce: |
       - Открыть любую страницу магазина
       - Навести курсор на логотип в верхнем левом углу
       - Попытаться кликнуть для возврата на главную
