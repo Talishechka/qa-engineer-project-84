@@ -33,7 +33,7 @@ bugreports:
    - summary: |
       Карточка товара "Chicken Meat" не реагирует на клики
     environment: |
-      Версия приложения: Hexlet Store v1.2.1
+      Версия приложения: Hexlet Store v2
       Браузер: Chrome 121.0.6167.160 (Официальная сборка) (64-бит)
       ОС: Windows 11 Pro 22H2
     steps-to-reproduce: |
@@ -57,7 +57,7 @@ bugreports:
   - summary: |
       Неполный перевод интерфейса на русский язык
     environment: |
-      Hexlet Store v1.2.1, Chrome 121, Windows 11
+      Hexlet Store v2, Chrome 121, Windows 11
     steps-to-reproduce: |
       1. Переключить язык на русский
       2. Открыть любую категорию товаров
@@ -69,7 +69,7 @@ bugreports:
   - summary: |
       Фильтр по цене не учитывает скидки
     environment: |
-      Hexlet Store v1.2.1, Firefox 120, macOS
+      Hexlet Store v2, Firefox 120, macOS
     steps-to-reproduce: |
       1. Установить фильтр "до 5000 руб."
       2. Искать товар со скидкой 50% (ориг. цена 10000 руб.)
@@ -81,7 +81,7 @@ bugreports:
   - summary: |
       Ошибка 500 при оформлении заказа
     environment: |
-      Hexlet Store v1.2.1, API v2.3.1, Windows 11
+      Hexlet Store v2, API v2.3.1, Windows 11
     steps-to-reproduce: |
       1. Добавить товар в корзину
       2. Нажать "Checkout"
@@ -93,7 +93,7 @@ bugreports:
   - summary: |
     Некликабельный логотип Hexlet Store в хедере
   environment: |
-    Версия: Hexlet Store v1.2.1
+    Версия: Hexlet Store 2
     Все основные браузеры
   steps-to-reproduce: |
     1. Открыть любую страницу магазина
@@ -110,7 +110,7 @@ bugreports:
 - summary: |
     Некликабельный крестик в модальном окне успешного оформления заказа
   environment: |
-    Версия: Hexlet Store v1.2.1
+    Версия: Hexlet Store v2
     Устройства: Все платформы
   steps-to-reproduce: |
     1. Оформить тестовый заказ
