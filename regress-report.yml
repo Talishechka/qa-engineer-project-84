@@ -1,5 +1,4 @@
 ---
-test-cases:
   - summary: Проверка поиска товаров по ключевому слову "Cooking Oil"
     status: pass
   - summary: Проверка добавления товара "Cooking Oil" в корзину
