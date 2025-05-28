@@ -40,7 +40,7 @@
     Фильтр учитывает только оригинальную цену (10000 руб.)
   severity: "high"
   attachments:
-    - "screenshots/discount_price_filter_issue.jpg"
+    - "docs/discount_price_filter_issue.jpg"
 
 - summary: |
     Неудобная навигация в фильтре по брендам: не все бренды отображаются, управление только кнопками "Предыдущая"/"Следующая"
@@ -59,9 +59,6 @@
     2. Нет поиска по названию
     3. Для просмотра других брендов нужно использовать кнопки навигации
   severity: "medium"
-  attachments:
-    - "screenshots/brand_filter_ui_issue.png"
-
 
 - summary: |
     Некликабельный логотип Hexlet Store в хедере
@@ -96,7 +93,7 @@
   severity: "medium"
   regression: "Да"
   attachments:
-    - "screenshots/modal_close_button_bug.png"
+    - "docs/modal_close_button_bug.png"
 
 - summary: "Ошибка 500 при попытке отправить заказ (Internal Server Error)"
     environment: |
@@ -121,4 +118,4 @@
       - Ошибка воспроизводится в 100% случаев
       - Проблема наблюдается только для всех пользователей
     attachments:
-      - screenshot: "screenshots/500_error.png"
+      - screenshot: "docs/500_error.png"
