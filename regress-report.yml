@@ -1,35 +1,29 @@
+---
 test-cases:
   - summary: |
       Проверка поиска товаров по ключевому слову "Cooking Oil"
     status: pass
     bugreports: []
-
   - summary: |
       Проверка добавления товара "Cooking Oil" в корзину
     status: pass
     bugreports: []
-
   - summary: |
       Проверка переключения языка интерфейса с английского на русский
     status: pass
     bugreports: []
-
   - summary: |
       Проверка отображения детальной информации о товаре "Chicken Meat"
     status: fail
-
   - summary: |
       Проверка работы фильтров по цене (диапазон 5000-15000 руб.)
     status: fail
-
   - summary: |
       Проверка отправки заказа с товаром "Eyeshadow Palette with Mirror"
     status: fail
-
   - summary: |
       Некликабельный логотип Hexlet Store в хедере
     status: fail
-
 bugreports:
   - summary: |
       Карточка товара "Chicken Meat" не реагирует на клики
@@ -49,7 +43,6 @@ bugreports:
     additional-info: |
       Проблема наблюдается для всех товаров в категории "Meat"
       В консоли разработчика ошибок не обнаружено
-
   - summary: |
       Неполный перевод интерфейса на русский язык
     environment: |
@@ -61,7 +54,6 @@ bugreports:
       Полный перевод всех элементов интерфейса
     actual-result: |
       Названия товаров и описания остались на английском
-
   - summary: |
       Фильтр по цене не учитывает скидки
     environment: |
@@ -74,7 +66,6 @@ bugreports:
       Товар должен отображаться в результатах
     actual-result: |
       Товар не отображается, фильтр учитывает только оригинальную цену
-
   - summary: |
       Ошибка 500 при оформлении заказа
     environment: |
@@ -86,7 +77,6 @@ bugreports:
       Успешное создание заказа
     actual-result: |
       Получена ошибка 500 Internal Server Error
-
   - summary: |
       Некликабельный логотип Hexlet Store в хедере
     environment: |
